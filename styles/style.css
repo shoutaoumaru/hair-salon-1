@@ -694,7 +694,7 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   margin: auto;
-  z-index: 5000;
+  z-index: 1000;
 }
 
 .p-firstview__text {
@@ -855,11 +855,19 @@
 
 .p-header {
   width: 100%;
-  background-color: #fff;
+  background-color: transparent;
+}
+
+.p-header .mobile-container {
+  height: 50px;
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2000;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  border-bottom: 1px solid #242424;
+  z-index: 5000;
 }
 
 .p-header .logo__img {
@@ -967,15 +975,9 @@
   .p-header .sp-navbtn {
     display: none;
   }
-}
-
-@media (min-width: 960px) {
   .p-header .mobile-container {
     display: none;
   }
-}
-
-@media (min-width: 960px) {
   .p-header .pc-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -998,7 +1000,7 @@
 
 .menu-open.mobile-menu {
   opacity: 1;
-  z-index: 1000;
+  z-index: 3000;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   -webkit-transform: none;
@@ -1060,32 +1062,103 @@
 .mobile-menu__nav {
   display: block;
   text-align: center;
-  padding-top: 40vw;
+  padding-top: 30vw;
 }
 
-.mobile-menu__ul {
+.mobile-menu__list {
   width: 100%;
   font-size: 0.9em;
-  top: 164px;
+  top: 140px;
   text-align: center;
   list-style: none;
 }
 
-.mobile-menu__li {
+.mobile-menu__item {
   margin-bottom: 50px;
 }
 
-.mobile-menu__li a {
+.mobile-menu__item a {
   letter-spacing: 4px;
 }
 
+.mobile-menu .reserve-btn-wrap h4 {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.mobile-menu .reserve-btn-wrap .reserve-btn {
+  border: 1px solid #161616;
+  display: inline-block;
+  margin-bottom: 25px;
+  width: 172px;
+}
+
+.mobile-menu .reserve-btn-wrap .reserve-btn span {
+  position: relative;
+  display: block;
+  text-align: center;
+  padding: 10px 20px 10px 10px;
+  font-size: 12px;
+}
+
+.mobile-menu .reserve-btn-wrap .reserve-btn-net span {
+  position: relative;
+  letter-spacing: 2px;
+}
+
+.mobile-menu .reserve-btn-wrap .reserve-btn-net span::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 12px;
+  right: 5px;
+  height: 12px;
+  width: 12px;
+  background-image: url(/images/common/icon-link-1-black.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.mobile-menu .reserve-btn-wrap .reserve-btn-tel span {
+  letter-spacing: 4px;
+}
+
+.mobile-menu .reserve-btn-wrap .reserve-btn-tel span::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  height: 12px;
+  width: 12px;
+  background-image: url(/images/common/icon-tel.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 @media (min-width: 600px) {
-  .mobile-menu__li {
+  .mobile-menu__item {
     margin-bottom: 60px;
   }
-  .mobile-menu__li a {
+  .mobile-menu__item a {
     letter-spacing: 4px;
     font-size: 1.4rem;
+  }
+  .mobile-menu .reserve-btn-wrap h4 {
+    font-size: 18px;
+  }
+  .mobile-menu .reserve-btn-wrap .reserve-btn {
+    width: 240px;
+  }
+  .mobile-menu .reserve-btn-wrap .reserve-btn span {
+    padding: 15px 30px 15px 20px;
+    font-size: 16px;
+  }
+  .mobile-menu .reserve-btn-wrap .reserve-btn span::after {
+    top: 16px;
+    right: 12px;
+    width: 18px;
+    height: 18px;
   }
 }
 
@@ -1660,17 +1733,6 @@ a {
   .p-firstview .swiper-container .view-pc {
     display: none;
   }
-}
-
-.p-header {
-  background-color: transparent;
-}
-
-.p-header .mobile-container {
-  height: 50px;
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
-  border-bottom: 1px solid #242424;
 }
 
 .p-concept {
