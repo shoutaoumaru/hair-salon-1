@@ -2600,6 +2600,15 @@ Stylesheet: 600px以上のモニタで適用
     margin-bottom: 30px;
     font-size: .8rem;
   }
+  .c-staff .sns-link span {
+    font-size: 20px;
+  }
+  .c-staff .sns-link span::before {
+    height: 24px;
+    width: 24px;
+    top: 4px;
+    right: 4px;
+  }
   .c-news-sl .c-container {
     padding: 0 10vw;
   }
@@ -2783,6 +2792,15 @@ Stylesheet: 960px以上のモニタで適用
   .c-staff__desc {
     font-size: 1.1rem;
   }
+  .c-staff .sns-link span {
+    font-size: 25px;
+  }
+  .c-staff .sns-link span::before {
+    height: 30px;
+    width: 30px;
+    top: 0px;
+    right: 15px;
+  }
   .c-recruit {
     padding: 10vw 0;
   }
@@ -2927,6 +2945,15 @@ Stylesheet: 1200px以上のモニタで適用
   }
   .c-staff__list {
     margin-top: 7vw;
+  }
+  .c-staff .sns-link span {
+    font-size: 30px;
+  }
+  .c-staff .sns-link span::before {
+    height: 30px;
+    width: 30px;
+    top: 0px;
+    right: 15px;
   }
   .c-recruit {
     padding: 3vw 0 5vw 0;
