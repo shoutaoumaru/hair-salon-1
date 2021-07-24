@@ -1548,8 +1548,8 @@
 body {
   margin: 0;
   color: #161616;
-  font-family: 'Noto Serif JP', serif;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Noto Serif JP", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -1582,14 +1582,14 @@ a {
 }
 
 .c-txt-sm {
-  font-size: .7rem;
+  font-size: 0.7rem;
   letter-spacing: 3px;
   line-height: 2;
   color: #474747;
 }
 
 .c-txt-xs {
-  font-size: .5rem;
+  font-size: 0.5rem;
   letter-spacing: 2px;
   line-height: 2;
   color: #474747;
@@ -1620,7 +1620,7 @@ a {
 }
 
 .icon-tel::before {
-  content: '';
+  content: "";
   display: block;
   background-image: url(/images/common/icon-tel.png);
   background-position: center;
@@ -1635,7 +1635,7 @@ a {
 }
 
 .icon-map::before {
-  content: '';
+  content: "";
   display: block;
   background-image: url(/images/common/icon-map.png);
   background-position: center;
@@ -1650,7 +1650,7 @@ a {
 }
 
 .icon-net::before {
-  content: '';
+  content: "";
   display: block;
   background-image: url(/images/common/icon-calendar.png);
   background-position: center;
@@ -1669,7 +1669,7 @@ a {
 }
 
 .icon-insta::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1696,7 +1696,7 @@ a {
 }
 
 .insta-link span::before {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   top: 0;
@@ -1709,7 +1709,7 @@ a {
 }
 
 .insta-link span::after {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   top: 10px;
@@ -1813,7 +1813,7 @@ a {
   padding-top: 15vw;
   letter-spacing: 1px;
   max-width: 100%;
-  font-size: .5rem;
+  font-size: 0.5rem;
 }
 
 .p-menu__list dl {
@@ -1837,7 +1837,7 @@ a {
 
 .p-menu__subtitle {
   margin-bottom: 30px;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .p-menu__subtitle span {
@@ -1939,7 +1939,7 @@ a {
 }
 
 .p-access__g-map span::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 3px;
   left: 0;
@@ -1975,7 +1975,7 @@ a {
   display: block;
   padding: 5vw 0;
   border-bottom: 1px solid #ebebeb;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .p-news__link:first-child {
@@ -1999,7 +1999,7 @@ a {
 }
 
 .p-news .view-more span {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .p-footer {
@@ -2067,7 +2067,7 @@ a {
 .p-footer .copyright {
   text-align: center;
   margin-top: 5vw;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .c-staff {
@@ -2086,7 +2086,7 @@ a {
 
 .c-staff__title p {
   margin-top: 10vw;
-  font-size: .5rem;
+  font-size: 0.5rem;
   line-height: 2;
 }
 
@@ -2103,6 +2103,8 @@ a {
 }
 
 .c-staff__item {
+  position: relative;
+  margin: 0 0 10px 0;
   width: 45%;
 }
 
@@ -2113,18 +2115,26 @@ a {
 .c-staff__name {
   margin: 10px 0;
   text-align: center;
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 
 .c-staff__desc {
   margin: 10px 0 20px 0;
-  font-size: .5rem;
+  font-size: 0.5rem;
+}
+
+.c-staff .sns-link {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  margin: auto;
 }
 
 .c-staff .sns-link span {
   position: relative;
-  padding-left: 30px;
-  font-size: 16px;
+  padding-left: 15px;
+  font-size: 0.8rem;
 }
 
 .c-staff .sns-link span::before {
@@ -2135,8 +2145,9 @@ a {
   display: inline-block;
   background-image: url(/images/common/icon-insta-gr.png);
   background-size: contain;
-  height: 20px;
-  width: 20px;
+  background-repeat: no-repeat;
+  height: 0.8rem;
+  width: 0.8rem;
 }
 
 .c-recruit {
@@ -2155,13 +2166,13 @@ a {
 
 .c-recruit__title p {
   margin-top: 10vw;
-  font-size: .5rem;
+  font-size: 0.5rem;
   line-height: 2;
 }
 
 .c-recruit__list {
   margin-top: 10vw;
-  font-size: .6rem;
+  font-size: 0.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2176,7 +2187,7 @@ a {
   text-align: right;
   letter-spacing: 2px;
   line-height: 1.5;
-  font-size: .7rem;
+  font-size: 0.7rem;
   margin-top: 30px;
 }
 
@@ -2188,7 +2199,7 @@ a {
 }
 
 .c-recruit__btn span::before {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   top: 0;
@@ -2203,11 +2214,11 @@ a {
 
 .c-recruit__name {
   text-align: center;
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 
 .c-recruit__desc {
-  font-size: .5rem;
+  font-size: 0.5rem;
 }
 
 .c-news {
@@ -2223,13 +2234,13 @@ a {
 
 .c-news__link p {
   margin-top: 2vw;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .c-news__link span {
   padding: 3px;
   border-radius: 5%;
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: #a0a0a0;
 }
 
@@ -2268,7 +2279,7 @@ a {
   width: 8vw;
   height: 8vw;
   border-radius: 100%;
-  border: 1px solid #C4CCD1;
+  border: 1px solid #c4ccd1;
   background: #fff;
   margin: 0 1.3vw;
 }
@@ -2331,7 +2342,7 @@ a {
 
 .c-news__contents {
   line-height: 2;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .c-news__title {
@@ -2363,13 +2374,13 @@ a {
 }
 
 .c-news-sl__contents p {
-  font-size: .5rem;
+  font-size: 0.5rem;
 }
 
 .c-news-sl__link {
   margin: 0 0 10vw 0;
   text-align: right;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .c-news-sl__link a {
@@ -2397,7 +2408,7 @@ Stylesheet: 600px以上のモニタで適用
     font-size: 1rem;
   }
   .c-txt-xs {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   .insta-link span {
     padding-left: 35px;
@@ -2569,10 +2580,10 @@ Stylesheet: 600px以上のモニタで適用
     padding: 10vw 0 5vw 0;
   }
   .c-recruit__title p {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   .c-recruit__list {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   .c-recruit__subtitle {
     font-size: 1rem;
@@ -2587,7 +2598,7 @@ Stylesheet: 600px以上のモニタで適用
     padding: 5vw 0 5vw 0;
   }
   .c-staff__title p {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .c-staff__img {
     height: 250px;
@@ -2598,15 +2609,17 @@ Stylesheet: 600px以上のモニタで適用
   }
   .c-staff__desc {
     margin-bottom: 30px;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .c-staff .sns-link span {
+    position: relative;
+    padding-left: 40px;
     font-size: 20px;
   }
   .c-staff .sns-link span::before {
     height: 24px;
     width: 24px;
-    top: 4px;
+    top: 0px;
     right: 4px;
   }
   .c-news-sl .c-container {
@@ -2794,6 +2807,8 @@ Stylesheet: 960px以上のモニタで適用
   }
   .c-staff .sns-link span {
     font-size: 25px;
+    position: relative;
+    padding-left: 40px;
   }
   .c-staff .sns-link span::before {
     height: 30px;
@@ -2947,13 +2962,7 @@ Stylesheet: 1200px以上のモニタで適用
     margin-top: 7vw;
   }
   .c-staff .sns-link span {
-    font-size: 30px;
-  }
-  .c-staff .sns-link span::before {
-    height: 30px;
-    width: 30px;
-    top: 0px;
-    right: 15px;
+    bottom: -20px;
   }
   .c-recruit {
     padding: 3vw 0 5vw 0;

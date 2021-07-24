@@ -21,11 +21,10 @@ Stylesheet: 600px以上のモニタで適用
 }
 
 .c-txt-xs {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .insta-link {
-
   & span {
     padding-left: 35px;
     padding-right: 20px;
@@ -185,10 +184,9 @@ Stylesheet: 600px以上のモニタで適用
   &__item {
     width: 32%;
   }
-
 }
 
-//.p-access 
+//.p-access
 .p-access {
   padding: 10vw 0;
 
@@ -235,12 +233,12 @@ Stylesheet: 600px以上のモニタで適用
 
   &__title {
     & p {
-      font-size: .9rem;
+      font-size: 0.9rem;
     }
   }
 
   &__list {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 
   &__subtitle {
@@ -262,7 +260,7 @@ Stylesheet: 600px以上のモニタで適用
 
   &__title {
     & p {
-      font-size: .8rem;
+      font-size: 0.8rem;
     }
   }
 
@@ -277,15 +275,17 @@ Stylesheet: 600px以上のモニタで適用
 
   &__desc {
     margin-bottom: 30px;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .sns-link {
     & span {
+      position: relative;
+      padding-left: 40px;
       font-size: 20px;
       &::before {
         height: 24px;
         width: 24px;
-        top: 4px;
+        top: 0px;
         right: 4px;
       }
     }

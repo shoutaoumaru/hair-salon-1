@@ -52,7 +52,6 @@ Stylesheet: 960px以上のモニタで適用
 
 //.header
 .p-header {
-
   & .logo__img {
     margin-left: 50px;
   }
@@ -79,7 +78,6 @@ Stylesheet: 960px以上のモニタで適用
     & .pc-nav-item {
       padding-top: 3vw;
     }
-
   }
 }
 
@@ -90,7 +88,7 @@ Stylesheet: 960px以上のモニタで適用
   }
 }
 
-//.p-menu 
+//.p-menu
 .p-menu {
   &__section {
     font-size: 1.2rem;
@@ -164,7 +162,7 @@ Stylesheet: 960px以上のモニタで適用
   }
 }
 
-//.p-footer 
+//.p-footer
 .p-footer {
   &__sns {
     & .sns-link {
@@ -218,12 +216,13 @@ Stylesheet: 960px以上のモニタで適用
   .sns-link {
     & span {
       font-size: 25px;
-      
+      position: relative;
+      padding-left: 40px;
       &::before {
         height: 30px;
         width: 30px;
         top: 0px;
-        right: 15px;  
+        right: 15px;
       }
     }
   }
@@ -258,7 +257,6 @@ Stylesheet: 960px以上のモニタで適用
 
 //* * * * * * news-page * * * * * * *
 .c-news {
-
   &__title {
     margin-bottom: 6vw;
 

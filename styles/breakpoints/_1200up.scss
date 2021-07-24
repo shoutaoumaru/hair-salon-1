@@ -83,14 +83,14 @@ Stylesheet: 1200px以上のモニタで適用
   }
 }
 
-//.p-recruit 
+//.p-recruit
 .p-recruit {
   &__title {
     margin-bottom: 5vw;
   }
 }
 
-//.p-news 
+//.p-news
 .p-news {
   padding: 5vw 0;
 
@@ -131,14 +131,7 @@ Stylesheet: 1200px以上のモニタで適用
 
   .sns-link {
     & span {
-      font-size: 30px;
-      
-      &::before {
-        height: 30px;
-        width: 30px;
-        top: 0px;
-        right: 15px;  
-      }
+      bottom: -20px;
     }
   }
 }
