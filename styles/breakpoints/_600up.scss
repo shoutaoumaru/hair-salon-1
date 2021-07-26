@@ -64,6 +64,17 @@ Stylesheet: 600px以上のモニタで適用
     top: 30px;
     right: 40px;
   }
+
+  & .sp-navbtn {
+    display: none;
+  }
+}
+
+//.p-firstview
+.p-firstview {
+  .swiper-container {
+    height: 100vh;
+  }
 }
 
 //.p-concept
@@ -184,11 +195,15 @@ Stylesheet: 600px以上のモニタで適用
   &__item {
     width: 32%;
   }
+
+  .view-more {
+    margin-top: 0;
+  }
 }
 
 //.p-access
 .p-access {
-  padding: 10vw 0;
+  padding: 0;
 
   &__img {
     padding-top: 10vw;
@@ -223,7 +238,13 @@ Stylesheet: 600px以上のモニタで適用
 //.p-news
 .p-news {
   &__link {
-    padding: 4vw 0;
+    padding: 3vw 0;
+  }
+
+  & .view-more {
+    & span {
+      font-size: 1rem;
+    }
   }
 }
 
@@ -277,11 +298,13 @@ Stylesheet: 600px以上のモニタで適用
     margin-bottom: 30px;
     font-size: 0.8rem;
   }
+
   .sns-link {
     & span {
       position: relative;
       padding-left: 40px;
       font-size: 20px;
+
       &::before {
         height: 24px;
         width: 24px;

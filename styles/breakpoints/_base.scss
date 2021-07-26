@@ -37,14 +37,14 @@ a {
 }
 
 .c-txt-sm {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   letter-spacing: 3px;
   line-height: 2;
   color: $cSubBlack;
 }
 
 .c-txt-xs {
-  font-size: 0.5rem;
+  font-size: 0.7rem;
   letter-spacing: 2px;
   line-height: 2;
   color: $cSubBlack;
@@ -206,6 +206,10 @@ a {
     }
   }
 
+  &__block {
+    margin-bottom: 10vw;
+  }
+
   &__img {
     padding: 0 0 10vw 40vw;
     position: relative;
@@ -219,7 +223,7 @@ a {
 
 //.p-info
 .p-info {
-  padding: 20vw 0;
+  padding: 10vw 0 20vw 0;
 
   &__title {
     padding: 10vw 0;
@@ -432,12 +436,7 @@ a {
   &__link {
     display: block;
     padding: 5vw 0;
-    border-bottom: 1px solid rgb(235, 235, 235);
     font-size: 0.8rem;
-
-    &:first-child {
-      border-top: 1px solid rgb(235, 235, 235);
-    }
 
     & p {
       margin-top: 2vw;
@@ -447,6 +446,14 @@ a {
       padding: 3px;
       border-radius: 5%;
       background-color: rgb(247, 247, 247);
+    }
+  }
+
+  &__item {
+    border-bottom: 1px solid rgb(235, 235, 235);
+
+    &:first-child {
+      border-top: 1px solid rgb(235, 235, 235);
     }
   }
 
@@ -574,17 +581,20 @@ a {
     margin: 10px 0 20px 0;
     font-size: 0.5rem;
   }
+
   .sns-link {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -10px;
+    bottom: -6px;
     margin: auto;
 
     & span {
       position: relative;
-      padding-left: 15px;
+      padding: 0 0 4px 15px;
       font-size: 0.8rem;
+      border-bottom: 1px solid $cSubBlack;
+
       &::before {
         position: absolute;
         top: 0;
