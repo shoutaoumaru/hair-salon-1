@@ -44,7 +44,8 @@
               <a class="pc-nav-link animsition-link" href="/"><span>Top</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/staff/staff.html"><span>Staff</span></a>
+              <!-- <a class="pc-nav-link animsition-link" href="/staff/staff.html"><span>Staff</span></a> -->
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/staff')); ?>"><span>Staff</span></a>
             </li>
             <li class="pc-nav-item">
               <a class="pc-nav-link animsition-link" href="/recruit/recruit.html"><span>Recruit</span></a>
