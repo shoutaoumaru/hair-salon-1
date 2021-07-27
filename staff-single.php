@@ -19,7 +19,7 @@
         <div class="c-staff__list">
           <div class="c-staff__item">
             <div class="c-staff__img">
-              <img src="/images/home/biyousshi_mens@sp.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/home/biyousshi_mens@sp.jpg" alt="">
             </div>
             <h4 class="c-staff__name">
               <p class="ja">利部 翔太</p>
@@ -34,7 +34,7 @@
           </div>
           <div class="c-staff__item">
             <div class="c-staff__img">
-              <img src="/images/home/biyoushi.lady@sp.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/home/biyoushi.lady@sp.jpg" alt="">
             </div>
             <h4 class="c-staff__name">
               <p class="ja">利部 梨花</p>
@@ -48,7 +48,7 @@
           </div>
           <div class="c-staff__item">
             <div class="c-staff__img">
-              <img src="/images/home/staff_1@sp.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/home/staff_1@sp.jpg" alt="">
             </div>
             <h4 class="c-staff__name">
               <p class="ja">利部 美紀</p>

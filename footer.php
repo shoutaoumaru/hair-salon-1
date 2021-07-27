@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="c-logo">
-      <img src="/images/common/riv_logo_official2.png" alt="">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/common/riv_logo_official2.png" alt="">
     </div>
     <div class="copyright">
       &copy;RivRound.inc
@@ -22,7 +22,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/scripts/vendor/animsition.min.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/page.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>scripts/vendor/swiper.min.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/scripts/vendor/swiper.min.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/scripts/vendor/simpleParallax.min.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/parallax.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/hero-slider.js"></script>

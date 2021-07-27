@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-<head>
-  <?php get_header(); ?>
-</head>
-
 <body class="animsition">
   <div class="superwrapper">
+  <head>
+    <?php get_header(); ?>
+  </head>
     <div class="svg-animation">
       <svg id="レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380.06 99.83"
         width="380.05999755859375" height="99.83000183105469">
@@ -83,16 +82,16 @@
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img class="view-sp" src="images/home/style_1@sp.jpg" />
-              <img class="view-pc" src="images/home/style_1@pc.jpg" />
+              <img class="view-sp" src="<?php echo get_template_directory_uri(); ?>/images/home/style_1@sp.jpg" />
+              <img class="view-pc" src="<?php echo get_template_directory_uri(); ?>/images/home/style_1@pc.jpg" />
             </div>
             <div class="swiper-slide">
-              <img class="view-sp" src="images/home/cut_3@sp.jpg" />
-              <img class="view-pc" src="images/home/cut_3@pc.jpg" />
+              <img class="view-sp" src="<?php echo get_template_directory_uri(); ?>/images/home/cut_3@sp.jpg" />
+              <img class="view-pc" src="<?php echo get_template_directory_uri(); ?>/images/home/cut_3@pc.jpg" />
             </div>
             <div class="swiper-slide">
-              <img class="view-sp" src="images/home/store_2@sp.jpg" />
-              <img class="view-pc" src="images/home/store_2@pc.jpg" />
+              <img class="view-sp" src="<?php echo get_template_directory_uri(); ?>/images/home/store_2@sp.jpg" />
+              <img class="view-pc" src="<?php echo get_template_directory_uri(); ?>/images/home/store_2@pc.jpg" />
             </div>
           </div>
         </div>
@@ -120,7 +119,7 @@
             </div>
           </div>
           <div class="p-concept__img">
-            <img src="/images/home/style_7@sp.jpg" alt="" class="p-concept__photo parallax-down">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/home/style_7@sp.jpg" alt="" class="p-concept__photo parallax-down">
           </div>
         </div>
       </div>
@@ -129,7 +128,7 @@
     <section id="information" class="p-info">
       <div class="c-container appear up">
         <div class="p-info__sub-img">
-          <img src="/images/home/style_10.jpg" alt="" class="p-concept__sub-photo parallax-img">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/home/style_10.jpg" alt="" class="p-concept__sub-photo parallax-img">
         </div>
         <div class="p-info__wrap">
           <h2 class="p-info__title clip-js left">
@@ -273,7 +272,7 @@
         <div class="p-staff__list">
           <div class="p-staff__item item">
             <div class="p-staff__img">
-              <img src="/images/home/biyoushi.lady@sp.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/home/biyoushi.lady@sp.jpg" alt="">
             </div>
             <h3 class="p-staff__name">
               <span class="c-txt-sm">利部 真理</span>
@@ -283,7 +282,7 @@
           </div>
           <div class="p-staff__item item">
             <div class="p-staff__img">
-              <img src="/images/home/biyousshi_mens@sp.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/home/biyousshi_mens@sp.jpg" alt="">
             </div>
             <h3 class="p-staff__name">
               <span class="c-txt-sm">利部 凛玖</span>
@@ -293,7 +292,7 @@
           </div>
           <div class="p-staff__item item">
             <div class="p-staff__img">
-              <img src="/images/home/staff_1@sp.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/home/staff_1@sp.jpg" alt="">
             </div>
             <h3 class="p-staff__name">
               <span class="c-txt-sm">利部 美紀</span>
@@ -313,7 +312,7 @@
     <section id="access" class="p-access">
       <div class="c-container">
         <div class="p-access__img">
-          <img src="/images/home/store__2@pc.jpg" alt="" class="p-access__photo parallax">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/home/store__2@pc.jpg" alt="" class="p-access__photo parallax">
         </div>
         <div class="p-access-wrap">
           <h2 class="p-access__title clip-js left">
