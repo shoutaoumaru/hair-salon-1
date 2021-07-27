@@ -5,14 +5,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>美容室テンプレート1 | top</title>
-  <link rel="stylesheet" href="/styles/vendor/logo-animation.min.css">
+  <!-- <link rel="stylesheet" href="/styles/vendor/logo-animation.min.css">
   <link rel="stylesheet" href="styles/vendor/animsition.min.css" />
-  <link rel="stylesheet" href="styles/vendor/bootstrap-reboot.css" />
+  <link rel="stylesheet" href="styles/vendor/bootstrap-reboot.css" /> -->
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/vendor/logo-animation.min.css" />
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>styles/vendor/animsition.min.css" />
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>styles/vendor/bootstrap-reboot.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&family=Roboto:wght@100;300&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="styles/vendor/swiper.min.css" />
-  <link rel="stylesheet" href="styles/style.css" />
+  <!-- <link rel="stylesheet" href="styles/vendor/swiper.min.css" />
+  <link rel="stylesheet" href="styles/style.css" /> -->
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/vendor/swiper.min.css" />
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/style.css" />
   <?php wp_head(); ?>
 </head>
 
@@ -521,7 +526,7 @@
     </nav>
   </div>
   <!-- /.mobile-menu -->
-  <script src="scripts/vendor/pace.js"></script>
+  <!-- <script src="scripts/vendor/pace.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="/scripts/vendor/animsition.min.js"></script>
   <script src="/scripts/libs/page.js"></script>
@@ -533,7 +538,22 @@
   <script src="scripts/libs/scroll.js"></script>
   <script src="scripts/libs/text-animation.js"></script>
   <script src="scripts/libs/mobile-menu.js"></script>
-  <script src="scripts/main.js"></script>
-</body>
+  <script src="scripts/main.js"></script> -->
 
+  <script src="<?php echo get_template_directory_uri(); ?>/scripts/vendor/pace.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/scripts/vendor/animsition.min.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/page.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>scripts/vendor/swiper.min.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/scripts/vendor/simpleParallax.min.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/parallax.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/hero-slider.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/scroll-btn.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/scroll.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/text-animation.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/mobile-menu.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/scripts/main.js"></script>
+
+</body>
+<?php wp_footer(); ?>
 </html>
