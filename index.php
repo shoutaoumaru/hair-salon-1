@@ -13,6 +13,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="styles/vendor/swiper.min.css" />
   <link rel="stylesheet" href="styles/style.css" />
+  <?php wp_head(); ?>
 </head>
 
 <body class="animsition">
