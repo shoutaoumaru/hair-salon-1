@@ -1,21 +1,17 @@
+<?php 
+/* Template Name: STAFF
+*/
+?>
 <!DOCTYPE html>
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>美容師テンプレート2/staff</title>
-  <link rel="stylesheet" href="/styles/vendor/animsition.min.css">
-  <link rel="stylesheet" href="/styles/vendor/bootstrap-reboot.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&family=Roboto:wght@100;300&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="../styles/style.css">
+  <title>美容院テンプレート1/STAFF</title>
+  <?php get_header(); ?>
 </head>
 
 <body>
-  <div class="superwrapper animsition">
+  <div class="superwrapper">
     <header id="header" class="p-header">
       <div class="mobile-container">
         <div class="logo__img">
@@ -44,14 +40,13 @@
               <a class="pc-nav-link animsition-link" href="/"><span>Top</span></a>
             </li>
             <li class="pc-nav-item">
-              <!-- <a class="pc-nav-link animsition-link" href="/staff/staff.html"><span>Staff</span></a> -->
               <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/staff')); ?>"><span>Staff</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/recruit/recruit.html"><span>Recruit</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/recruit')); ?>"><span>Recruit</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/news/news.html"><span>News</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/news')); ?>"><span>News</span></a>
             </li>
             <li class="pc-nav-item">
               <a target="_blank" class="pc-nav-link reserve-btn"
@@ -85,7 +80,7 @@
             <div class="c-staff__list">
               <div class="c-staff__item">
                 <div class="c-staff__img">
-                  <img src="/images/home/biyousshi_mens@sp.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/biyousshi_mens@sp.jpg" alt="">
                 </div>
                 <h4 class="c-staff__name">
                   <p class="ja">利部 翔太</p>
@@ -100,7 +95,7 @@
               </div>
               <div class="c-staff__item">
                 <div class="c-staff__img">
-                  <img src="/images/home/biyoushi.lady@sp.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/biyoushi.lady@sp.jpg" alt="">
                 </div>
                 <h4 class="c-staff__name">
                   <p class="ja">利部 梨花</p>
@@ -114,7 +109,7 @@
               </div>
               <div class="c-staff__item">
                 <div class="c-staff__img">
-                  <img src="/images/home/staff_1@sp.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/staff_1@sp.jpg" alt="">
                 </div>
                 <h4 class="c-staff__name">
                   <p class="ja">利部 美紀</p>
@@ -131,7 +126,7 @@
         </div>
       </div>
     </main>
-    <!-- /.c-staff -->
+
     <footer class="p-footer">
       <div class="c-container">
         <div class="p-footer__sns">
@@ -143,7 +138,7 @@
           </div>
         </div>
         <div class="c-logo">
-          <img src="/images/common/riv_logo_official2.png" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/common/riv_logo_official2.png" alt="">
         </div>
         <div class="copyright">
           &copy;RivRound.inc
@@ -158,10 +153,10 @@
             <a class="animsition-link" href="/">Top</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/staff/staff.html">Staff</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/staff')); ?>">Staff</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/recruit/recruit.html">recruit</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/recruit')); ?>">recruit</a>
           </li>
           <li class="mobile-menu__item">
             <a class="animsition-link" href="/news/news.html">News</a>
@@ -183,14 +178,9 @@
         </div>
       </nav>
     </div>
-    <!-- /.mobile-menu -->
+  <!-- /.mobile-menu -->
   </div>
-  <!-- /.superwrapper -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="/scripts/vendor/animsition.min.js"></script>
-  <script src="/scripts/libs/page.js"></script>
-  <script src="../scripts/libs/scroll-btn.js"></script>
-  <script src="../scripts/libs/mobile-menu.js"></script>
+  <!-- .superwrapper -->
+  <?php get_template_part('includes/c-footer'); ?>
 </body>
-
 </html>
