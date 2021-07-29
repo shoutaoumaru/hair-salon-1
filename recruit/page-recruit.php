@@ -150,7 +150,7 @@
             <a class="animsition-link" href="<?php echo esc_url( home_url('/recruit')); ?>">recruit</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/news/news.html">News</a>
+          <a class="animsition-link" href="<?php echo esc_url( home_url('/news')); ?>">News</a>
           </li>
         </ul>
         <div class="reserve-btn-wrap">

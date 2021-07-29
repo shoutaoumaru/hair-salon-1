@@ -408,27 +408,19 @@
         </h2>
         <div class="p-news__wrapper appear up">
           <ul class="p-news__list item">
+
+          <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
             <li class="p-news__item">
-              <a class="p-news__link animsition-link" href="/news/news.html">
-                <span class="c-txt-sm">2021/05/25</span>
-                <p class="c-txt-sm">営業時間短縮営業について</p>
+              <a class="p-news__link animsition-link" href="<?php the_permalink(); ?>">
+                <span class="c-txt-sm"><?php echo get_the_date('Y.m.d'); ?></span>
+                <p class="c-txt-sm"><?php the_title(); ?></p>
               </a>
             </li>
-            <li class="p-news__item">
-              <a class="p-news__link animsition-link" href="/news/news.html">
-                <span class="c-txt-sm">2021/05/25</span>
-                <p class="c-txt-sm">新型コロナウィルス感染拡大について</p>
-              </a>
-            </li>
-            <li class="p-news__item">
-              <a class="p-news__link animsition-link" href="/news/news.html">
-                <span class="c-txt-sm">2021/05/25</span>
-                <p class="c-txt-sm">ホームページリニューアル致しました</p>
-              </a>
-            </li>
+            <?php endwhile; ?>
+            <?php endif; ?>
           </ul>
           <div class="view-more item">
-            <a class="view-more__link animsition-link" href="/news/news.html">
+            <a class="view-more__link animsition-link" href="/news">
               <span>NEWS LIST</span></a>
           </div>
         </div>
@@ -489,7 +481,7 @@
             <a class="animsition-link" href="<?php echo esc_url( home_url('/recruit')); ?>">recruit</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/news/news.html">News</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/news')); ?>">News</a>
           </li>
         </ul>
         <div class="reserve-btn-wrap">

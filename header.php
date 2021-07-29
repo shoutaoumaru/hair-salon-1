@@ -9,5 +9,4 @@
     rel="stylesheet">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/vendor/swiper.min.css" />
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/style.css" />
-  <!-- <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
   <?php wp_head(); ?>

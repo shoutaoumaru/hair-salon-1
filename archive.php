@@ -62,7 +62,6 @@
       <!-- /.nav-btn -->
     </header>
     <!-- /.p-header -->
-
     <section class="c-news">
       <div class="c-container">
         <h3 class="c-news__title">
@@ -76,8 +75,7 @@
                 <p class="c-txt-sm"><?php the_title(); ?></p>
               </a>
             </li>
-            <?php endwhile; else: ?>
-              <div>記事がありませんでした。</div>
+            <?php endwhile; ?>
             <?php endif; ?>
           </ul> 
         <!-- pagination -->
@@ -117,7 +115,7 @@
             <a class="animsition-link" href="<?php echo esc_url( home_url('/recruit')); ?>">recruit</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/news/news.html">News</a>
+          <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/news')); ?>"><span>News</span></a>
           </li>
         </ul>
         <div class="reserve-btn-wrap">
