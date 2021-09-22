@@ -2,9 +2,12 @@
 body {
   margin: 0;
   color: $cBlack;
-
   font-family: "Noto Serif JP", serif;
   font-family: "Roboto", sans-serif;
+
+  &.hidden {
+    overflow: hidden;
+  }
 }
 
 a {
@@ -197,7 +200,7 @@ a {
   position: relative;
 
   & .swiper-container {
-    height: 92vh;
+    height: 85vh;
 
     @media (max-width: 1199px) {
       .view-pc {

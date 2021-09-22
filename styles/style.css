@@ -6,6 +6,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+body.hidden {
+  overflow: hidden;
+}
+
 a {
   color: #161616;
 }
@@ -200,7 +204,7 @@ a {
 }
 
 .p-firstview .swiper-container {
-  height: 92vh;
+  height: 85vh;
 }
 
 @media (max-width: 1199px) {
