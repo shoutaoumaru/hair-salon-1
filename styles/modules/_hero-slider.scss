@@ -1,14 +1,11 @@
 .swiper-container {
   overflow: visible !important;
-  height: 90vh;
 }
 
 .swiper-slide {
   overflow: hidden;
 
   &>img {
-    width: 100%;
-    height: 100%;
     max-width: 100%;
     object-fit: cover;
     transform: scale(1.1);
@@ -33,29 +30,6 @@
       opacity: 1;
       transform: translate(-50%, -50%);
     }
-  }
-}
-
-.swiper-container2 {
-  height: 200px;
-  width: 100%;
-  overflow: hidden;
-
-  &>img {
-    object-fit: contain !important;
-    transition: transform 1s ease;
-  }
-}
-
-.swiper-container3 {
-  height: 200px;
-  width: 100%;
-  overflow: hidden;
-  margin-top: 15vw;
-
-  &>img {
-    object-fit: contain !important;
-    transition: transform 1s ease;
   }
 }
 

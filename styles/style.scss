@@ -1,11 +1,11 @@
 @import 'modules/mixin';
 @import 'modules/variable';
+@import 'breakpoints/base';
 @import 'modules/svg-animation';
 @import 'modules/hero-slider';
 @import 'modules/mobile-menu';
 @import 'modules/appear';
 @import 'modules/text-animation';
-@import 'breakpoints/base';
 
 @media (min-width: 600px) {
   @import 'breakpoints/600up';

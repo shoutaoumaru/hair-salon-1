@@ -250,7 +250,7 @@ Stylesheet: 600px以上のモニタで適用
 
 //* * * * * * recruit-page * * * * * * *
 .c-recruit {
-  padding: 10vw 0 5vw 0;
+  padding: 0 0 5vw 0;
 
   &__title {
     & p {
@@ -277,7 +277,7 @@ Stylesheet: 600px以上のモニタで適用
 
 //* * * * * * staff-page * * * * * * *
 .c-staff {
-  padding: 5vw 0 5vw 0;
+  padding: 0 0 5vw 0;
 
   &__title {
     & p {
@@ -318,7 +318,7 @@ Stylesheet: 600px以上のモニタで適用
 //* * * * * * news-sl-page * * * * * * *
 .c-news-sl {
   & .c-container {
-    padding: 0 10vw;
+    padding: 10vw;
   }
 
   &__tit {
@@ -345,5 +345,5 @@ Stylesheet: 600px以上のモニタで適用
 
 //* * * * * * news-page * * * * * * *
 .c-news {
-  padding: 20vw 0 0 0;
+  padding: 5vw 0 0 0;
 }
