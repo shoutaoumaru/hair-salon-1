@@ -1766,7 +1766,7 @@ a {
   opacity: .7;
   height: 8vh;
   width: 100%;
-  z-index: 100;
+  z-index: 1000;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
