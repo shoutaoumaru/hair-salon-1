@@ -192,7 +192,6 @@ Stylesheet: 960px以上のモニタで適用
 
 //* * * * * * staff-page * * * * * * *
 .c-staff {
-  padding: 5vw 0 0 0;
 
   &__title {
     & p {
@@ -213,24 +212,11 @@ Stylesheet: 960px以上のモニタで適用
   &__desc {
     font-size: 1.1rem;
   }
-  .sns-link {
-    & span {
-      font-size: 25px;
-      position: relative;
-      padding-left: 40px;
-      &::before {
-        height: 30px;
-        width: 30px;
-        top: 0px;
-        right: 15px;
-      }
-    }
-  }
+
 }
 
 //* * * * * * recruite-page * * * * * * *
 .c-recruit {
-  padding: 10vw 0;
 
   &__title {
     & p {
@@ -286,10 +272,10 @@ Stylesheet: 960px以上のモニタで適用
 
 //* * * * * * news-sl-page * * * * * * *
 .c-news-sl {
-  padding: 10vw 0 10vw 0;
+  padding: 0 0 10vw 0;
 
   & .c-container {
-    padding: 0 12vw;
+    padding: 10vw 12vw 0 12vw;
   }
 
   &__tit {
@@ -300,10 +286,6 @@ Stylesheet: 960px以上のモニタで適用
     & span {
       font-size: 1.4rem;
     }
-  }
-
-  &__list {
-    padding: 20vw 0 6vw 0;
   }
 
   &__contents {
