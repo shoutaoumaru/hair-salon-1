@@ -132,6 +132,12 @@
       <!-- /.nav-btn -->
     </header>
     <!-- /.p-header -->
+    <div class="pageBg">
+      <span class="lines">
+      </span>
+      <span class="txt">Riv<br>HairSalon</span>
+    </div>
+    <!-- /.pageBg -->
     <div class="p-firstview">
       <div class="hero">
         <div class="swiper-container">

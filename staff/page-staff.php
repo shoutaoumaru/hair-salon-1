@@ -66,6 +66,12 @@
       <!-- /.nav-btn -->
     </header>
     <!-- /.p-header -->
+    <div class="pageBg">
+      <span class="lines">
+      </span>
+      <span class="txt">Riv<br>HairSalon</span>
+    </div>
+    <!-- /.pageBg -->
     <div class="c-top-view">
       <img src="<?php echo get_template_directory_uri(); ?>/images/home/counseling__2.jpg" alt="">
     </div>
