@@ -31,14 +31,11 @@ Stylesheet: 600px以上のモニタで適用
     font-size: 24px;
 
     &::before {
-      top: 5px;
-      left: 0;
       height: 24px;
       width: 24px;
     }
 
     &::after {
-      top: 15px;
       height: 12px;
       width: 12px;
     }

@@ -221,6 +221,12 @@ a {
   text-align: center;
 }
 
+@media (min-width: 960px) {
+  .pageBg .txt {
+    font-size: 11rem;
+  }
+}
+
 .p-firstview {
   position: relative;
 }
@@ -293,6 +299,47 @@ a {
 
 .p-info .resep p:last-of-type {
   padding-top: 3vw;
+}
+
+.p-instagram__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.p-instagram__img a {
+  width: 33%;
+}
+
+@media (min-width: 960px) {
+  .p-instagram__img {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 60px;
+  }
+  .p-instagram__img a {
+    width: 25%;
+  }
+  .p-instagram .insta-link {
+    text-align: center;
+  }
+  .p-instagram .insta-link span {
+    font-size: 34px;
+    padding-left: 50px;
+    padding-right: 30px;
+  }
+  .p-instagram .insta-link span::before {
+    height: 34px;
+    width: 34px;
+  }
+  .p-instagram .insta-link span::after {
+    height: 20px;
+    width: 20px;
+  }
 }
 
 .p-menu {
@@ -2425,13 +2472,10 @@ Stylesheet: 600px以上のモニタで適用
     font-size: 24px;
   }
   .insta-link span::before {
-    top: 5px;
-    left: 0;
     height: 24px;
     width: 24px;
   }
   .insta-link span::after {
-    top: 15px;
     height: 12px;
     width: 12px;
   }
@@ -2674,7 +2718,7 @@ Stylesheet: 960px以上のモニタで適用
     padding: 0 10vw;
   }
   .c-title {
-    font-size: 2.2rem;
+    font-size: 2.6rem;
   }
   .c-txt-lr {
     font-size: 2rem;

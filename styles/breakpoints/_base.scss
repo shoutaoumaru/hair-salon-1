@@ -213,6 +213,12 @@ a {
     line-height: 0.9;
     text-align: center;
   }
+
+  @media (min-width: 960px) {
+    & .txt {
+      font-size: 11rem;
+    }
+  }
 }
 
 //p-firstview
@@ -288,6 +294,51 @@ a {
 
       &:last-of-type {
         padding-top: 3vw;
+      }
+    }
+  }
+}
+
+//.p-instagram
+.p-instagram {
+  &__img {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    & a {
+      width: 33%;
+    }
+  }
+
+  @media (min-width:960px) {
+
+    &__img {
+      justify-content: space-around;
+      margin-bottom: 60px;
+
+      & a {
+        width: 25%;
+      }
+    }
+
+    .insta-link {
+      text-align: center;
+
+      span {
+        font-size: 34px;
+        padding-left: 50px;
+        padding-right: 30px;
+
+        &::before {
+          height: 34px;
+          width: 34px;
+        }
+
+        &::after {
+          height: 20px;
+          width: 20px;
+        }
       }
     }
   }
