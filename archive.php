@@ -75,14 +75,14 @@
     <section class="c-news">
       <div class="c-container">
         <h3 class="c-news__title">
-          <span class="c-txt-lr">News</span>
+          <span class="txt-lr">News</span>
         </h3>
         <ul class="c-news__list">
           <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
             <li class="c-news__item">
               <a href="<?php the_permalink(); ?>" class="c-news__link animsition-link">
-                <span class="c-txt-sm"><?php echo get_the_date('Y.m.d'); ?></span>
-                <p class="c-txt-sm"><?php the_title(); ?></p>
+                <span class="txt-sm"><?php echo get_the_date('Y.m.d'); ?></span>
+                <p class="txt-sm"><?php the_title(); ?></p>
               </a>
             </li>
             <?php endwhile; ?>

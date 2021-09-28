@@ -4,26 +4,6 @@ Stylesheet: 600px以上のモニタで適用
 
 ******************************************************************/
 
-.c-container {
-  padding: 0 10vw;
-}
-
-.c-title {
-  font-size: 1.8rem;
-}
-
-.c-txt-lr {
-  font-size: 1.8rem;
-}
-
-.c-txt-sm {
-  font-size: 1rem;
-}
-
-.c-txt-xs {
-  font-size: 0.9rem;
-}
-
 .insta-link {
   & span {
     padding-left: 35px;
@@ -31,14 +11,11 @@ Stylesheet: 600px以上のモニタで適用
     font-size: 24px;
 
     &::before {
-      top: 5px;
-      left: 0;
       height: 24px;
       width: 24px;
     }
 
     &::after {
-      top: 15px;
       height: 12px;
       width: 12px;
     }
@@ -79,7 +56,6 @@ Stylesheet: 600px以上のモニタで適用
 
 //.p-concept
 .p-concept {
-  padding: 15vw 0 10vw 0;
 
   &__title {
     padding-bottom: 5vw;
@@ -96,16 +72,15 @@ Stylesheet: 600px以上のモニタで適用
   }
 
   &__img {
-    margin-top: 30vw;
+    margin-top: 24vw;
     padding-left: 0;
     width: 48%;
-    height: 500px;
+    height: 400px;
   }
 }
 
 //.p-info
 .p-info {
-  padding: 10vw 0;
 
   & .c-container {
     display: flex;
@@ -132,9 +107,9 @@ Stylesheet: 600px以上のモニタで適用
   }
 
   &__sub-img {
-    height: 400px;
+    height: 300px;
     margin-bottom: 0;
-    margin-top: 25vw;
+    margin-top: 15vw;
     width: 48%;
   }
 
@@ -145,15 +120,23 @@ Stylesheet: 600px以上のモニタで適用
 
 //.p-menu
 .p-menu {
-  padding: 10vw 0;
 
   &__list {
     display: flex;
     justify-content: space-between;
+    padding-top: 10vw;
   }
 
   &__block {
     width: 46%;
+
+    & .txt-xs {
+      line-height: 1.5;
+    }
+
+    & li {
+      margin-bottom: 0;
+    }
   }
 
   &__img-wrap {
@@ -177,14 +160,8 @@ Stylesheet: 600px以上のモニタで適用
   }
 }
 
-//.p-recruit
-.p-recruit {
-  padding: 5vw 0;
-}
-
 //.p-staff
 .p-staff {
-  padding: 5vw 0;
 
   &__list {
     display: flex;
@@ -203,17 +180,47 @@ Stylesheet: 600px以上のモニタで適用
 
 //.p-access
 .p-access {
-  padding: 0;
+  padding: 3vw 0;
 
-  &__img {
-    padding-top: 10vw;
+  & .c-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
   }
 
-  & .simpleParallax {
-    text-align: center;
+  &__item {
+    margin-bottom: 2vw;
+  }
 
-    & img {
-      width: 80%;
+  &__title {
+    padding: 0 0 3vw 0;
+  }
+
+  &__img {
+    width: 55%;
+  }
+
+  &-wrap {
+    width: 40%;
+  }
+
+  &__desc {
+    display: block;
+  }
+
+  &__g-map {
+    margin-top: 3vw;
+    text-align: left;
+
+    & span {
+      font-size: 1.4rem;
+      padding-left: 45px;
+
+      &::before {
+        top: 10px;
+        height: 26px;
+        width: 26px;
+      }
     }
   }
 }
@@ -237,6 +244,14 @@ Stylesheet: 600px以上のモニタで適用
 
 //.p-news
 .p-news {
+  &__tit {
+    text-align: center;
+  }
+
+  &__list {
+    padding: 0 20vw;
+  }
+
   &__link {
     padding: 3vw 0;
   }
@@ -245,6 +260,22 @@ Stylesheet: 600px以上のモニタで適用
     & span {
       font-size: 1rem;
     }
+  }
+}
+
+//.p-recruit 
+.p-recruit {
+
+  .c-container {
+    padding: 0 20vw;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  .view-more {
+    text-align: center;
   }
 }
 

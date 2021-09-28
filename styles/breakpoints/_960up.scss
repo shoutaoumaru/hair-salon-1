@@ -3,45 +3,6 @@
 Stylesheet: 960px以上のモニタで適用
 
 ******************************************************************/
-.c-container {
-  padding: 0 10vw;
-}
-
-.c-title {
-  font-size: 2.2rem;
-}
-
-.c-txt-lr {
-  font-size: 2rem;
-  letter-spacing: 5px;
-  line-height: 2;
-  color: $cSubBlack;
-  margin-top: 0;
-  font-weight: 100;
-}
-
-.c-txt-md {
-  font-size: 1.6rem;
-  letter-spacing: 2px;
-  line-height: 2;
-  color: $cSubBlack;
-  margin: 0;
-}
-
-.c-txt-sm {
-  font-size: 1.2rem;
-  letter-spacing: 3px;
-  line-height: 2;
-  color: $cSubBlack;
-}
-
-.c-txt-xs {
-  font-size: 1rem;
-  letter-spacing: 2px;
-  line-height: 2;
-  color: $cSubBlack;
-}
-
 .view-more {
   text-align: center;
 
@@ -85,6 +46,10 @@ Stylesheet: 960px以上のモニタで適用
 .p-firstview {
   & .swiper-container {
     height: 100vh;
+
+    .view-sp {
+      display: none;
+    }
   }
 }
 
@@ -110,53 +75,6 @@ Stylesheet: 960px以上のモニタで適用
     &__link {
       & span {
         font-size: 1.4rem;
-      }
-    }
-  }
-}
-
-//.p-access
-.p-access {
-  padding: 3vw 0;
-
-  & .c-container {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-  }
-
-  &__item {
-    margin-bottom: 2vw;
-  }
-
-  &__title {
-    padding: 0 0 3vw 0;
-  }
-
-  &__img {
-    width: 55%;
-  }
-
-  &-wrap {
-    width: 40%;
-  }
-
-  &__desc {
-    display: block;
-  }
-
-  &__g-map {
-    margin-top: 3vw;
-    text-align: left;
-
-    & span {
-      font-size: 1.4rem;
-      padding-left: 45px;
-
-      &::before {
-        top: 10px;
-        height: 26px;
-        width: 26px;
       }
     }
   }

@@ -173,7 +173,7 @@
               <span class="c-title">concept</span>
             </h2>
             <div class="p-concept__desc item">
-              <p class="c-txt-sm">RIVROUNDでは、ご希望のヘアデザインに仕上がるよう、高い技術力とカウンセリングでお応え。 日々、鏡を見た時に少し微笑むような体験。
+              <p class="txt-sm">RIVROUNDでは、ご希望のヘアデザインに仕上がるよう、高い技術力とカウンセリングでお応え。 日々、鏡を見た時に少し微笑むような体験。
                 可愛く、そして美しく。
                 「明日あなたの大切な人に褒められるように」をコンセプトにRIVROUNDでは本物の上質にこだわりながら、丁寧なカウンセリングでお客様のなかなか伝えづらいお悩み、ご要望をお伺いして、きれいになるお手伝いをさせて頂きます
               </p>
@@ -197,28 +197,39 @@
           </h2>
           <div class="p-info__desc item">
             <div class="close">
-              <p class="c-txt-sm">CLOSE</p>
-              <p class="c-txt-sm">毎週金曜日</p>
+              <p class="txt-sm">CLOSE</p>
+              <p class="txt-sm">毎週金曜日</p>
             </div>
             <div class="open">
-              <p class="c-txt-sm">OPEN HOUR</p>
-              <p class="c-txt-sm">9:00-19:00</p>
+              <p class="txt-sm">OPEN HOUR</p>
+              <p class="txt-sm">9:00-19:00</p>
             </div>
             <div class="resep">
-              <p class="c-txt-sm">RESERVATION</p>
-              <p class="c-txt-sm">CUT最終受付 19:00</p>
-              <p class="c-txt-sm">PERM・COLOR最終受付 18:00</p>
-              <p class="c-txt-xs">※日曜日のみ、最終受付を一時間繰り上げさせて頂きます。<br>※ご予約優先制です</p>
-            </div>
-            <div class="insta-link">
-              <a href="https://www.instagram.com/" class="insta-link-btn" target="_blank">
-                <span>follow us</span></a>
+              <p class="txt-sm">RESERVATION</p>
+              <p class="txt-sm">CUT最終受付 19:00</p>
+              <p class="txt-sm">PERM・COLOR最終受付 18:00</p>
+              <p class="txt-xs">※日曜日のみ、最終受付を一時間繰り上げさせて頂きます。<br>※ご予約優先制です</p>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- /.p-info -->
+    <section id="instagram" class="p-instagram">
+      <div class="c-container appear up">
+        <h2 class="p-concept__title clip-js left">
+          <span class="c-title">instagram</span>
+        </h2>
+        <div class="p-instagram__img item">
+          <?php echo apply_filters('the_content', '[instagram-feed]'); ?>
+        </div>
+        <div class="insta-link item">
+          <a href="https://www.instagram.com/shouta_oumaru/" class="insta-link-btn" target="_blank">
+            <span>follow us</span></a>
+        </div>
+      </div>
+    </section>
+    <!-- /#instagram -->
     <section id="menu" class="p-menu">
       <div class="c-container appear up">
         <h2 class="p-menu__titile clip-js left">
@@ -228,45 +239,45 @@
           <div class="p-menu__block">
             <section class="p-menu__section">
               <h3 class="p-menu__subtitle">CUT<span>（カット）</span></h3>
-              <dl>
+              <dl class="txt-sm">
                 <dt>Stylist / Top Stylist</dt>
                 <dd>¥ 4,400 / ¥ 4,700</dd>
               </dl>
-              <dl>
+              <dl class="txt-sm">
                 <dt>Director</dt>
                 <dd>¥ 5,000</dd>
               </dl>
             </section>
             <section class="p-menu__section">
               <h3 class="p-menu__subtitle">COLOR<span>（カラー）</span></h3>
-              <dl>
+              <dl class="txt-sm">
                 <dt>リタッチ</dt>
                 <dd>¥ 4,500〜</dd>
               </dl>
-              <dl>
+              <dl class="txt-sm">
                 <dt>ワンタッチ</dt>
                 <dd>¥ 5,500〜</dd>
               </dl>
-              <dl>
+              <dl class="txt-sm">
                 <dt>ダブルカラー</dt>
                 <dd>¥ 10,000〜</dd>
               </dl>
-              <dl>
+              <dl class="txt-sm">
                 <dt>ハイライト</dt>
                 <dd>¥ 10,000〜</dd>
               </dl>
             </section>
             <section class="p-menu__section">
               <h3 class="p-menu__subtitle">PERM<span>（パーマ）</span></h3>
-              <dl>
+              <dl class="txt-sm">
                 <dt>ベーシックパーマ</dt>
                 <dd>¥ 6,600 〜</dd>
               </dl>
-              <dl>
+              <dl class="txt-sm">
                 <dt>デジタルパーマ</dt>
                 <dd>¥ 11,600 〜</dd>
               </dl>
-              <dl>
+              <dl class="txt-sm">
                 <dt>ストレートパーマ</dt>
                 <dd>¥ 17,000 〜</dd>
               </dl>
@@ -277,13 +288,13 @@
               <h3 class="p-menu__subtitle">
                 HAIR CARE<span>（ヘアケア）</span>
               </h3>
-              <dl>
+              <dl class="txt-sm">
                 <dt>
                   トリートメント各種<br><span>（AVEDA／MILBON／Aujua）</span>
                 </dt>
                 <dd class="snd">¥ 2,500 〜 ¥ 5,000</dd>
               </dl>
-              <dl>
+              <dl class="txt-sm">
                 <dt>
                   ヘッドスパ各種<br><span>（AVEDA／MILBON／Aujua）</span>
                 </dt>
@@ -292,24 +303,24 @@
             </section>
             <section class="p-menu__section">
               <h3 class="p-menu__subtitle">OTHER<span>（その他）</span></h3>
-              <dl>
+              <dl class="txt-sm">
                 <dt>シャンプー&amp;ブロー</dt>
                 <dd>¥ 2,500</dd>
               </dl>
-              <dl>
+              <dl class="txt-sm">
                 <dt>セット / アップ</dt>
                 <dd>¥ 4,000 / ¥ 5,000</dd>
               </dl>
-              <dl>
+              <dl class="txt-sm">
                 <dt>ポイントメイク / フルメイク</dt>
                 <dd>¥ 2,000 / ¥ 4,000</dd>
               </dl>
-              <dl>
+              <dl class="txt-sm">
                 <dt>時間外料金<span>（1時間毎）</span></dt>
                 <dd>+ ¥ 1,500</dd>
               </dl>
             </section>
-            <ul class="c-txt-xs">
+            <ul class="txt-xs">
               <li>※表示価格はすべて税込です</li>
               <li>
                 カット料金以外は、シャンプー・ブローは含まれておりません。
@@ -336,9 +347,9 @@
               <img src="<?php echo get_template_directory_uri(); ?>/images/home/biyoushi.lady@sp.jpg" alt="">
             </div>
             <h3 class="p-staff__name">
-              <span class="c-txt-sm">利部 真理</span>
-              <span class="c-txt-sm">Mari Ribu</span>
-              <p class="c-txt-xs">Executive Director</p>
+              <span class="txt-sm">利部 真理</span>
+              <span class="txt-sm">Mari Ribu</span>
+              <p class="txt-xs">Executive Director</p>
             </h3>
           </div>
           <div class="p-staff__item item">
@@ -346,9 +357,9 @@
               <img src="<?php echo get_template_directory_uri(); ?>/images/home/biyousshi_mens@sp.jpg" alt="">
             </div>
             <h3 class="p-staff__name">
-              <span class="c-txt-sm">利部 凛玖</span>
-              <span class="c-txt-sm">Riku Ribu</span>
-              <p class="c-txt-xs">Director</p>
+              <span class="txt-sm">利部 凛玖</span>
+              <span class="txt-sm">Riku Ribu</span>
+              <p class="txt-xs">Director</p>
             </h3>
           </div>
           <div class="p-staff__item item">
@@ -356,9 +367,9 @@
               <img src="<?php echo get_template_directory_uri(); ?>/images/home/staff_1@sp.jpg" alt="">
             </div>
             <h3 class="p-staff__name">
-              <span class="c-txt-sm">利部 美紀</span>
-              <span class="c-txt-sm">Miki Ribu</span>
-              <p class="c-txt-xs">Stylist</p>
+              <span class="txt-sm">利部 美紀</span>
+              <span class="txt-sm">Miki Ribu</span>
+              <p class="txt-xs">Stylist</p>
             </h3>
           </div>
         </div>
@@ -382,24 +393,24 @@
           <div class="p-access__desc appear up">
             <ul class="p-access__list item">
               <li class="p-access__item">
-                <p class="c-txt-sm">〒812-0011</p>
-                <p class="c-txt-sm">福岡県福岡市博多区博多駅前3-27-25,<br>第二岡部ビル9F</p>
+                <p class="txt-sm">〒812-0011</p>
+                <p class="txt-sm">福岡県福岡市博多区博多駅前3-27-25,<br>第二岡部ビル9F</p>
               </li>
               <li class="p-access__item">
-                <p class="c-txt-sm"><a href="tel:092-686-7954">TEL:092-686-7954</a></p>
-                <p class="c-txt-sm"><a href="mailto:info@riv-round.com">MAIL:info@riv-round.com</a>
+                <p class="txt-sm"><a href="tel:092-686-7954">TEL:092-686-7954</a></p>
+                <p class="txt-sm"><a href="mailto:info@riv-round.com">MAIL:info@riv-round.com</a>
                 </p>
               </li>
               <li class="p-access__item">
-                <p class="c-txt-sm">月~金 11:00~21:00</p>
-                <p class="c-txt-sm">土~日 10:00~19:00</p>
+                <p class="txt-sm">月~金 11:00~21:00</p>
+                <p class="txt-sm">土~日 10:00~19:00</p>
               </li>
               <li class="p-access__item">
-                <p class="c-txt-xs">駐車場あり（店舗前３台）</p>
+                <p class="txt-xs">駐車場あり（店舗前３台）</p>
               </li>
             </ul>
             <div class="p-access__g-map item">
-              <a href="https://goo.gl/maps/j8XVKnaPfmCbvFsb6"><span class="c-txt-sm">Google Map</span></a>
+              <a href="https://goo.gl/maps/j8XVKnaPfmCbvFsb6"><span class="txt-sm">Google Map</span></a>
             </div>
           </div>
         </div>
@@ -417,8 +428,8 @@
           <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
             <li class="p-news__item">
               <a class="p-news__link animsition-link" href="<?php the_permalink(); ?>">
-                <span class="c-txt-sm"><?php echo get_the_date('Y.m.d'); ?></span>
-                <p class="c-txt-sm"><?php the_title(); ?></p>
+                <span class="txt-sm"><?php echo get_the_date('Y.m.d'); ?></span>
+                <p class="txt-sm"><?php the_title(); ?></p>
               </a>
             </li>
             <?php endwhile; ?>
@@ -438,10 +449,10 @@
           <p class="c-title">recruit</p>
         </h2>
         <h3 class="p-recruit__subtitle item">
-          <p class="c-txt-md">スタッフ募集</p>
+          <p class="txt-md">スタッフ募集</p>
         </h3>
         <div class="p-recruit__desc item">
-          <p class="c-txt-sm">
+          <p class="txt-sm">
             現在RivRoundではスタッフを募集しています。<br />
             採用ご希望の方は、以下のリンクから詳細をご確認いただき、お気軽にお問い合わせください。
           </p>

@@ -19,49 +19,6 @@ a {
   overflow: hidden;
 }
 
-.c-container {
-  padding: 0 7vw;
-}
-
-.c-txt-lr {
-  font-size: 1.4rem;
-  letter-spacing: 5px;
-  line-height: 2;
-  color: $cSubBlack;
-  margin-top: 0;
-  font-weight: 100;
-}
-
-.c-txt-md {
-  font-size: 1rem;
-  letter-spacing: 2px;
-  line-height: 2;
-  color: $cSubBlack;
-  margin: 0;
-}
-
-.c-txt-sm {
-  font-size: 0.8rem;
-  letter-spacing: 3px;
-  line-height: 2;
-  color: $cSubBlack;
-}
-
-.c-txt-xs {
-  font-size: 0.7rem;
-  letter-spacing: 2px;
-  line-height: 2;
-  color: $cSubBlack;
-}
-
-.c-title {
-  font-weight: 100;
-  letter-spacing: 5px;
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: 1.4rem;
-}
-
 .view-more {
   margin-top: 10vw;
   text-align: right;
@@ -158,6 +115,8 @@ a {
       position: absolute;
       top: 0;
       left: 0;
+      bottom: 0;
+      margin: auto;
       height: 18px;
       width: 18px;
       background-image: url(../images/common/icon-insta-gr.png);
@@ -169,8 +128,10 @@ a {
       content: "";
       display: inline-block;
       position: absolute;
-      top: 10px;
+      top: 0;
       right: 0;
+      bottom: 0;
+      margin: auto;
       height: 8px;
       width: 8px;
       background-image: url(../images/common/arrow.png);
@@ -215,11 +176,12 @@ a {
 //ファーストビューセクション
 .p-firstview {
   position: relative;
+  @extend .mb-lr;
 
   & .swiper-container {
-    height: 84vw;
+    height: 80vh;
 
-    @media (max-width: 1199px) {
+    @media (max-width: 900px) {
       .view-pc {
         display: none;
       }
@@ -229,7 +191,7 @@ a {
 
 //.p-concept
 .p-concept {
-  padding: 30vw 0 0 0;
+  @extend .mb-lr;
 
   &__title {
     padding-bottom: 10vw;
@@ -258,13 +220,17 @@ a {
 
 //.p-info
 .p-info {
-  padding: 10vw 0 20vw 0;
+  @extend .mb-lr;
 
   &__title {
     padding: 10vw 0;
   }
 
   &__sub-img {
+    .simpleParallax {
+      height: 100%;
+    }
+
     width: 60%;
     margin-bottom: 15vw;
   }
@@ -292,7 +258,7 @@ a {
 
 //.p-menu
 .p-menu {
-  padding: 20vw 0;
+  @extend .mb-lr;
 
   &__title {
     text-align: left;
@@ -324,7 +290,6 @@ a {
 
     & dd,
     dt {
-      font-size: 0.8em;
       margin: 0;
     }
   }
@@ -365,9 +330,36 @@ a {
   }
 }
 
+//インスタセクション
+.p-instagram {
+  @extend .mb-lr;
+
+  #sb_instagram {
+    .sb_instagram_header {
+      display: none;
+    }
+
+    #sbi {
+      &_images {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .sbi_item {
+          width: 25% !important;
+        }
+      }
+    }
+  }
+
+  .insta-link {
+    text-align: right;
+  }
+}
+
 //.p-staff
 .p-staff {
-  padding: 20vw 0;
+  @extend .mb-lr;
 
   &__title {
     margin: 0 auto 40px;
@@ -393,7 +385,7 @@ a {
 
 //.p-recruit
 .p-recruit {
-  padding: 20vw 0;
+  @extend .mb-lr;
 
   &__title {
     text-align: left;
@@ -407,7 +399,7 @@ a {
 
 //.p-access
 .p-access {
-  padding: 20vw 0;
+  @extend .mb-lr;
 
   &__title {
     padding: 8vw 0;
@@ -450,16 +442,10 @@ a {
 //.p-news
 .p-news {
   position: relative;
-  padding: 10vw 0;
+  @extend .mb-lr;
 
   &__tit {
     margin-bottom: 10vw;
-
-    & p {
-      margin-bottom: -20px;
-      font-weight: 100;
-      letter-spacing: 5px;
-    }
   }
 
   &__txt {

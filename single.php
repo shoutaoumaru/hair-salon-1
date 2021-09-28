@@ -76,7 +76,7 @@
         <ul class="c-news-sl__list">
           <li class="c-news-sl__block">
             <div class="c-news-sl__tit">
-              <p class="c-txt-md"><?php the_title(); ?></p>
+              <p class="txt-md"><?php the_title(); ?></p>
               <span class="c-news-sl__date"><?php the_time('Y.m.d'); ?></span>
             </div>
             <div class="c-news-sl__contents">
